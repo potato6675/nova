@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pen</title>
+  </head>
+  <body>
+
+    
+<div class="browser">
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">N</div>
+      <span>Nova Browser</span>
+    </div>
+    <div class="window-controls">
+      <span></span><span></span><span></span>
+    </div>
+  </header>
+
+  <div class="toolbar">
+    <button id="back" title="Back">←</button>
+    <button id="forward" title="Forward">→</button>
+    <button id="refresh" title="Refresh">↻</button>
+
+    <form id="searchForm">
+      <span>⌕</span>
+      <input id="urlInput"
+        placeholder="Search or enter a website address..."
+        autocomplete="off">
+      <button type="submit">Go</button>
+      <button id="fullscreenBtn" title="Toggle fullscreen">
+  ⛶
+</button>
+    </form>
+  </div>
+
+  <main id="home">
+    <div class="hero">
+      <div class="hero-logo">N</div>
+      <h1>Explore something new.</h1>
+      <p>A simple, modern browsing experience.</p>
+      <form id="homeForm">
+        <input id="homeInput"
+          placeholder="Search the web..."
+          autocomplete="off">
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </main>
+
+  <section id="viewer" hidden>
+    <div id="frameMessage">
+      <h2>Website unavailable in embedded view</h2>
+      <p>This website does not allow embedding.</p>
+      <a id="externalLink" target="_blank"
+        rel="noopener noreferrer">Open website in a new tab ↗</a>
+    </div>
+    <iframe id="webFrame" title="Website viewer"></iframe>
+  </section>
+
+  <footer>
+    <span>Nova Browser</span>
+    <span>Independent browsing interface</span>
+  </footer>
+</div>
+
+
+    <script src="./script.js"></script>
+  </body>
+</html>
